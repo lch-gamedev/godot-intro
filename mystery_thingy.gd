@@ -4,7 +4,8 @@ extends Area2D
 func _process(delta: float) -> void:
 	rotation += 2 * delta
 
-func _on_body_entered(body):
+func _on_body_entered(body : CharacterBody2D):
 	if body.name == "Player":
 		$"%Label".text = "Status:    Contact with MysteryThingy! 🧐"
-		body.velocity.y -= 2000
+		# body.velocity.y -= 2000
+		
